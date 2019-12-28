@@ -36,32 +36,26 @@ div h1 {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   white-space: nowrap;
-  margin: 4vh auto;
+  margin: 2vh auto;
 }
 div h2 {
   z-index: 2;
   color: #fff;
-/*  font-size: 2rem;
-*/  font-weight: 300;
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-  white-space: nowrap;
-}
-div h1 {
-/*  position: absolute;
-  top: 50%;
-  left: 50%; */
-  z-index: 2;
-/*  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);*/
-  color: #fff;
-/*  font : normal 300 64px/1 'Josefin Sans', sans-serif;  */
-/*  font : 300 64px/1;  */  
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   white-space: nowrap;
+}
+div h3 {
+  z-index: 2;
+/*  display: inline-block; */
+  /*transform: translate(0, -50%);*/
+  color: #fff;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
 }
 
 
@@ -73,7 +67,7 @@ div h1 {
 }
 /*#section04 { background: url("https://picsum.photos/1200/800?image=506") center center / cover no-repeat;}
 */
-.header a {
+.demo a {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -87,7 +81,7 @@ div h1 {
   text-decoration: none;
   transition: opacity .3s;
 }
-.header a:hover {
+.demo a:hover {
   opacity: .5;
 }
 
