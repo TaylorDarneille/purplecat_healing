@@ -65,8 +65,7 @@ div h3 {
   flex-direction: column;
   justify-content: center;
 }
-/*#section04 { background: url("https://picsum.photos/1200/800?image=506") center center / cover no-repeat;}
-*/
+
 .demo a {
   position: absolute;
   bottom: 20px;
@@ -159,7 +158,10 @@ div h3 {
   }
 }
 
-
+main {
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  height: 100vh;
+}
 
 #section04 a {
   padding-top: 60px;
