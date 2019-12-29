@@ -6,11 +6,8 @@
 html, body {
   height: 100%;
 }
-div {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
+
+{/* TODO: get rid of this pseudo-element and/or find a way to apply this gradient to both sections*/}
 div::after {
   position: absolute;
   bottom: 0;
@@ -21,32 +18,61 @@ div::after {
   background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
   background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
 }
-div h1 {
-/*  position: absolute;
-  top: 50%;
-  left: 50%; */
-  z-index: 2;
-/*  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);*/
+
+.section {
   color: #fff;
-/*  font : normal 300 64px/1 'Josefin Sans', sans-serif;  */
-/*  font : 300 64px/1;  */  
-  font-size: 3rem;
-  font-weight: 300;
-  font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-  white-space: nowrap;
-  margin: 2vh auto;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  height: 100vh;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
 }
-div h2 {
+
+header {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+/*  background: url("https://images.unsplash.com/photo-1495975295218-a59edae1540a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1526&q=80") center center / cover no-repeat;
+*/}
+
+{/* TODO: find out how to get this background image into the header without adding an id? notice that the gradient from the .section rule currently usurps it if this line is in the header rule */}
+#section03 { 
+  background: url("https://images.unsplash.com/photo-1495975295218-a59edae1540a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1526&q=80") center center / cover no-repeat;
+}
+
+h1,h2 {
+  z-index: 2;
+  margin: 2vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+main {
+
+}
+
+/*div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}*/
+
+
+/*div h2 {
   z-index: 2;
   color: #fff;
   font-size: 2rem;
   font-weight: 300;
-  font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  white-space: nowrap;
-}
+}*/
 div h3 {
   z-index: 2;
 /*  display: inline-block; */
@@ -56,14 +82,6 @@ div h3 {
   letter-spacing: .1em;
   text-decoration: none;
   transition: opacity .3s;
-}
-
-
-#section03 { 
-  background: url("https://images.unsplash.com/photo-1495975295218-a59edae1540a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1526&q=80") center center / cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .demo a {
@@ -156,11 +174,6 @@ div h3 {
   100% {
     opacity: 0;
   }
-}
-
-main {
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-  height: 100vh;
 }
 
 #section04 a {
