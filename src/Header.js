@@ -5,8 +5,8 @@ function Header() {
     <header id="section03" className="section demo">
       <h1>Misha Lilac LMP, RYT</h1>
       <h2>Yoga. Meditation. Massage. Bodywork.</h2>
-      <h3><a href="https://www.thelavenderlioness.com/services-1">Book Now</a></h3>
-      <a href="#main"><span></span></a>
+      <h3><a href="https://squareup.com/appointments/book/5Z6Y1FC2CPY33">Book Now</a></h3>
+      <a id="scroll" href="#main"><span></span></a>
     </header>
   );
 }
