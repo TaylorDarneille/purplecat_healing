@@ -7,7 +7,7 @@ html, body {
   height: 100%;
 }
 
-h1,h2, h3 {
+h1,h2 {
   z-index: 2;
   margin: 2vh;
   text-align: center;
@@ -26,7 +26,12 @@ h2 {
   z-index: 42069;
   width: auto;
   margin: 0 auto;
-  border: #fff solid 2px;
+  border: #fff solid 1px;
+  padding: 2vh;
+}
+
+.book:hover {
+  background: grey;
 }
 
 .section {
@@ -66,9 +71,9 @@ header a {
   z-index: 2;
 }
 
-header a:hover {
+/*header a:hover {
   opacity: .5;
-}
+}*/
 
 #scroll {
   position: absolute;
