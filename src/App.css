@@ -7,18 +7,6 @@ html, body {
   height: 100%;
 }
 
-{/* TODO: get rid of this pseudo-element and/or find a way to apply this gradient to both sections*/}
-div::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 80%;
-  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
-  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
-}
-
 h1,h2, h3 {
   z-index: 2;
   margin: 2vh;
@@ -34,18 +22,18 @@ h2 {
   font-weight: 300;
 }
 
-h3 {
-  font-weight: 400;
+.book {
+  z-index: 42069;
+  width: auto;
+  margin: 0 auto;
   border: #fff solid 2px;
-  padding: 1vh;
 }
 
 .section {
   color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  font : normal 400 20px/1 'Josefin Sans',
+  sans-serif;
   height: 100vh;
-  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
-  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
 }
 
 header {
@@ -53,11 +41,22 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: url("https://images.unsplash.com/photo-1495975295218-a59edae1540a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1526&q=80") center center / cover no-repeat;
 }
 
-{/* TODO: find out how to get this background image into the header without adding an id? notice that the gradient from the .section rule currently usurps it if this line is in the header rule */}
-#section03 { 
-  background: url("https://images.unsplash.com/photo-1495975295218-a59edae1540a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1526&q=80") center center / cover no-repeat;
+header::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.8) 80%,rgba(0,0,0,.8) 100%);
+}
+
+a {
+  color: #fff;
 }
 
 header a {
@@ -65,7 +64,6 @@ header a {
   text-decoration: none;
   transition: opacity .3s;
   z-index: 2;
-  color: #fff;
 }
 
 header a:hover {
@@ -78,16 +76,14 @@ header a:hover {
   left: 50%;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
+  padding-top: 60px;
 }
 
 main {
 
 }
 
-#section03 a {
-  padding-top: 60px;
-}
-#section03 a span {
+#scroll span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -98,7 +94,7 @@ main {
   border-radius: 100%;
   box-sizing: border-box;
 }
-#section03 a span::after {
+#scroll span::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -112,7 +108,7 @@ main {
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
-#section03 a span::before {
+#scroll span::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -155,46 +151,5 @@ main {
   }
   100% {
     opacity: 0;
-  }
-}
-
-#section04 a {
-  padding-top: 60px;
-}
-#section04 a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-animation: sdb04 2s infinite;
-  animation: sdb04 2s infinite;
-  box-sizing: border-box;
-}
-@-webkit-keyframes sdb04 {
-  0% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-  }
-  20% {
-    -webkit-transform: rotate(-45deg) translate(-10px, 10px);
-  }
-  40% {
-    -webkit-transform: rotate(-45deg) translate(0, 0);
-  }
-}
-@keyframes sdb04 {
-  0% {
-    transform: rotate(-45deg) translate(0, 0);
-  }
-  20% {
-    transform: rotate(-45deg) translate(-10px, 10px);
-  }
-  40% {
-    transform: rotate(-45deg) translate(0, 0);
   }
 }
