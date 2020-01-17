@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/purplecat_healing/static/css/main.802d9848.chunk.css",
+    "main.js": "/purplecat_healing/static/js/main.1e1bde1f.chunk.js",
+    "main.js.map": "/purplecat_healing/static/js/main.1e1bde1f.chunk.js.map",
+    "runtime-main.js": "/purplecat_healing/static/js/runtime-main.da782524.js",
+    "runtime-main.js.map": "/purplecat_healing/static/js/runtime-main.da782524.js.map",
+    "static/css/2.919be68c.chunk.css": "/purplecat_healing/static/css/2.919be68c.chunk.css",
+    "static/js/2.b9e89db1.chunk.js": "/purplecat_healing/static/js/2.b9e89db1.chunk.js",
+    "static/js/2.b9e89db1.chunk.js.map": "/purplecat_healing/static/js/2.b9e89db1.chunk.js.map",
+    "index.html": "/purplecat_healing/index.html",
+    "precache-manifest.440ef3ebdf25bd9c5fb9e6a4d9fd0233.js": "/purplecat_healing/precache-manifest.440ef3ebdf25bd9c5fb9e6a4d9fd0233.js",
+    "service-worker.js": "/purplecat_healing/service-worker.js",
+    "static/css/2.919be68c.chunk.css.map": "/purplecat_healing/static/css/2.919be68c.chunk.css.map",
+    "static/css/main.802d9848.chunk.css.map": "/purplecat_healing/static/css/main.802d9848.chunk.css.map",
+    "static/js/2.b9e89db1.chunk.js.LICENSE": "/purplecat_healing/static/js/2.b9e89db1.chunk.js.LICENSE",
+    "static/media/index.css": "/purplecat_healing/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.da782524.js",
+    "static/css/2.919be68c.chunk.css",
+    "static/js/2.b9e89db1.chunk.js",
+    "static/css/main.802d9848.chunk.css",
+    "static/js/main.1e1bde1f.chunk.js"
+  ]
+}
