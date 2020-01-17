@@ -172,3 +172,17 @@ nav a {
     opacity: 0;
   }
 }
+
+.main {
+  max-width: 80%;
+  line-height: 1.5;
+  margin: 2vh auto;
+}
+
+#home span {
+  font-style: italic;
+}
+
+#home h1 {
+  margin-bottom: 0;
+}
