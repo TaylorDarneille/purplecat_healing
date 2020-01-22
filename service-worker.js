@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/purplecat_healing/precache-manifest.440ef3ebdf25bd9c5fb9e6a4d9fd0233.js"
+  "/purplecat_healing/precache-manifest.2431f98a80342dd33979b342986957b9.js"
 );
 
 self.addEventListener('message', (event) => {

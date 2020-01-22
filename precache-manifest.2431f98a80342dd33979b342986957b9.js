@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bc93e9d28d2ee6cfb9759aba1d0b8cc5",
+    "revision": "3a1a718f22d1047c890e26a89d498ae8",
     "url": "/purplecat_healing/index.html"
   },
   {
